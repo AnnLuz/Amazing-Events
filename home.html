@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/favicon.ico">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+      <div class="container-header">
+          <div class="container-navigation">
+            <div class="logo">
+              <figure class="logo">
+                <img src="./assets/img/Logo Amazing Events.png" alt="" class="logo">
+              </figure>
+            </div>
+            <div class="nav">
+              <nav class="button">
+                <ul class="nav nav-tabs ">
+                  <li class="nav-item">
+                    <a class="nav-link text-bg-danger" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./upcoming_events.html">Upcoming Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./past_events.html">Past Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./stats.html">Stats</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+            <div class="carousel">
+              <a href="" class="left"><img src="./assets/img/izquierda.png" alt="" class="left-arrow"></a>
+              <figure class="banner">
+                <img src="./assets/img/banner1.png" alt="" class="banner">
+              </figure>
+              <a href="./upcoming_events.html" class="right"><img src="./assets/img/derecha.png" alt="" class="right-arrow"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container-main" id="App">
+      <div class="select">
+        <div class="opc">
+          <form action="" method="get" id="category_checkbox" class="check">
+           <!-- <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="${catego.split(" ").join("_")}" value="${catego}" name= "categories">
+              <label class="form-check-label" for="${catego.split(" ").join("")}">${catego}</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="${catego.split(" ").join("_")}" value="${catego}" name= "categories">
+              <label class="form-check-label" for="${catego.split(" ").join("")}">${catego}</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="${catego.split(" ").join("_")}" value="${catego}" name= "categories">
+              <label class="form-check-label" for="${catego.split(" ").join("")}">${catego}</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="${catego.split(" ").join("_")}" value="${catego}" name= "categories">
+              <label class="form-check-label" for="${catego.split(" ").join("")}">${catego}</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="${catego.split(" ").join("_")}" value="${catego}" name= "categories">
+              <label class="form-check-label" for="${catego.split(" ").join("")}">${catego}</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="${catego.split(" ").join("_")}" value="${catego}" name= "categories">
+              <label class="form-check-label" for="${catego.split(" ").join("")}">${catego}</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="${catego.split(" ").join("_")}" value="${catego}" name= "categories">
+              <label class="form-check-label" for="${catego.split(" ").join("")}">${catego}</label>
+            </div>-->
+          </form>
+        </div>
+        <div class="seeker" id="searchs">
+          <div id="searchs" class="input-group justify-content-end">
+            <input type="text" class="form-check border border-danger-black"  placeholder="Search" aria-describedby="button-addon2">
+            <!--<button class="color_icon_search p-2" type="button" id="button-addon2" >
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search" viewBox="0 0 17 17">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+            </button>-->
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4" id="card_container">
+        <template  v-if="eventos.length > 0" v-for="events of eventos" class="card col h-100  gap-4">
+          <div class="card h-100">
+            <div class="cont">
+              <img src="events.image" class="card-img-top width" :alt="events.image">
+              <div class="card-body">
+                <h5 class="card-title">{{events.name}}</h5>
+                <p class="card-text">{{events.description}}</p>
+              </div>
+            <div class="card-footer">
+              <div class="price">
+                <p class="description-footer">Price: $ {{events.price}}</p>
+              </div>
+              <div class="button-footer">
+                <button type="button" class="btn btn-outline-danger"><a href="">See More</a></button>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div> -->
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div class="social-networks">
+              <img src="./assets/img/like.png" alt="" class="social1">
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="./assets/img/instagram.png" class="social2" alt="">
+              </a>
+              <a href="https://es-la.facebook.com/" target="_blank">
+                <img src="./assets/img/facebook.png" class="social3" alt="">
+              </a>
+              <a href="https://web.whatsapp.com/" target="_blank">
+                <img src="./assets/img/whatsapp.png" class="social4" alt="">
+              </a>
+            </div>
+            <div class="cohort">
+              <h2 class="cohort">FE10</h2>
+            </div>
+        </div>
+    </footer>
+    <!-- <script src="./JavaScript/data.js"></script> -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./JavaScript/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
